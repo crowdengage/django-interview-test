@@ -11,7 +11,6 @@ class Event(models.Model):
     duration_minutes = models.IntegerField(blank=True, null=True)
     description = models.TextField(blank=True)
 
-
 class EventInstance(models.Model):
     foreign_id = models.TextField()
     event = models.ForeignKey(Event, related_name="instances", on_delete=models.CASCADE)
