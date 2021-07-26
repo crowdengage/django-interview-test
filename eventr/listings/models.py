@@ -6,10 +6,15 @@ class Source(models.Model):
 
 class Event(models.Model):
     source = models.ForeignKey(Source, related_name="events", on_delete=models.CASCADE)
+    foreign_id = models.TextField()
     name = models.TextField()
-    # TODO Which other fields should we store for an Event?
+    duration_minutes = models.IntegerField(blank=True, null=True)
+    description = models.TextField(blank=True)
+
 
 class EventInstance(models.Model):
+    foreign_id = models.TextField()
     event = models.ForeignKey(Event, related_name="instances", on_delete=models.CASCADE)
     start_datetime = models.DateTimeField()
-    # TODO Which other fields should we store for an EventInstance?
+    venue_name = models.TextField(blank=True)
+    venue_address = models.TextField(blank=True)
