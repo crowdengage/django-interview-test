@@ -22,10 +22,11 @@ An `EventInstance` is a performance of an `Event`, for example the Wednesday mat
 
 2. Add the `Source` model to Django admin so that you can easily add new sources. For testing purposes, you may wish to use the following Spektrix clients. 
 
-| Partner Name                  | Spektrix Client Name | Spektrix API help page                                 | Spektrix API "Events" endpoint                           |
-| ----------------------------- | -------------------- | ------------------------------------------------------ | -------------------------------------------------------- |
-| Topping & Company Booksellers | toppingbooks         | https://system.spektrix.com/toppingbooks/api/v3/help   | https://system.spektrix.com/toppingbooks/api/v3/events   |
-| Mercury Theatre               | mercurytheatre       | https://system.spektrix.com/mercurytheatre/api/v3/help | https://system.spektrix.com/mercurytheatre/api/v3/events |
+| Partner Name                  | Spektrix Client Name | Spektrix API help page                                      | Spektrix API "Events" endpoint                                |
+| ----------------------------- | -------------------- | ----------------------------------------------------------- | ------------------------------------------------------------- |
+| Topping & Company Booksellers | toppingbooks         | https://system.spektrix.com/toppingbooks/api/v3/help        | https://system.spektrix.com/toppingbooks/api/v3/events        |
+| Mercury Theatre               | mercurytheatre       | https://system.spektrix.com/mercurytheatre/api/v3/help      | https://system.spektrix.com/mercurytheatre/api/v3/events      |
+| The Bridge Theatre            | bridgetheatrelondon  | https://system.spektrix.com/bridgetheatrelondon/api/v3/help | https://system.spektrix.com/bridgetheatrelondon/api/v3/events |
 
 3. Create a Django management command to sync events and event instances from all `Source`s and 
 create/update them in the eventr database, using the models in the `listings` app. This management command will be
