@@ -14,7 +14,7 @@ A `Source` is a source of data (i.e. a partner venue's ticketing system).
 
 An `Event` is a particular production, for example "Hamlet".
 
-An `EventInstance` is a performance of a `Event`, for example the Wednesday matinee for Hamlet.
+An `EventInstance` is a performance of an `Event`, for example the Wednesday matinee for Hamlet.
 
 ## Tasks
 
