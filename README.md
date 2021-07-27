@@ -27,7 +27,7 @@ An `EventInstance` is a performance of a `Event`, for example the Wednesday mati
 | Topping & Company Booksellers | toppingbooks         | https://system.spektrix.com/toppingbooks/api/v3/help   | https://system.spektrix.com/toppingbooks/api/v3/events   |
 | Mercury Theatre               | mercurytheatre       | https://system.spektrix.com/mercurytheatre/api/v3/help | https://system.spektrix.com/mercurytheatre/api/v3/events |
 
-3. Create a Django management command to sync events and event instances from partner ticketing systems and 
+3. Create a Django management command to sync events and event instances from all `Source`s and 
 create/update them in the eventr database, using the models in the `listings` app. This management command will be
 run manually by eventr staff to start with, but you should make sure that nothing unexpected will happen if two
 staff members run the management command at the same time.
