@@ -37,9 +37,9 @@ by a combination of the following parameters:
 	- event name (partial)
 	- partner
 	- event instances within date range
-	- city (NB: there is no field for City in the Spektrix API response but you can assume that all performances from a single Source will be in the same city)
+	- city (NB: there is no field for city in the Spektrix API response but you can assume that all performances from a single `Source` will be in the same city, which can be configured when adding the `Source`)
 
-5. Create a Vue app which displays listings based on those views. The homepage should display events happening across all partner venues.
+5. Create a Vue.js app which displays listings using DRF views and allows searching as described above. The homepage should display events happening today across all partner venues.
 
 6. Publish your code on Github as a private repository and add us to it.
 
